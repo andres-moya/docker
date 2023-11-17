@@ -16,6 +16,7 @@ RUN yum -y install xrootd xrootd-client xrootd-client-devel xrootd-client-libs \
                    xrootd-server xrootd-server-devel xrootd-server-libs xrootd-selinux \
                    xrootd-doc xrootd-lcmaps --enablerepo=osg-upcoming
 
+
 RUN yum -y install xrootd-scitokens
 RUN yum -y --disablerepo=* --enablerepo=epel update scitokens-cpp
 
